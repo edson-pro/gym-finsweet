@@ -34,7 +34,7 @@
             <a class="nav__link" href=""> Home </a>
           </li>
           <li>
-            <a class="nav__link" href=""> Product </a>
+            <a class="nav__link" href="product.html"> Product </a>
           </li>
           <li>
             <a class="nav__link" href=""> Pricing </a>
@@ -54,8 +54,8 @@
         </ul>
       </nav>
       <div class="hero relative">
-        <div class="max-w-5xl mx-auto text-center">
-          <div class="mx-auto max-w-2xl my-6">
+        <div class="hero__inner">
+          <div class="hero__header">
             <h4 class="hero__title">
               The Best Software to Grow your Sales and Services
             </h4>
@@ -68,7 +68,7 @@
           <form class="hero__form">
             <input
               type="text"
-              class="flex-1 px-3 outline-none"
+              class="hero__input"
               placeholder="Enter your email"
             />
             <a class="button button--primary" href="">Get Free trial</a>
@@ -84,35 +84,39 @@
           We have the Best Solution for your Business
         </h4>
       </div>
-      <div
-        class="grid rounded-md max-w-6xl mx-auto grid-cols-3 gap-4 p-8 bg-light-violet"
-      >
-        <div>
-          <img class="h-16 w-16 object-cover" src="./img/1.png" alt="" />
-          <h4 class="text-lg my-4 font-bold">
+      <div class="solutions">
+        <div class="solutions__card">
+          <img class="solutions__card-image" src="./img/1.png" alt="" />
+          <h4 class="solutions__card-title">
             High security to protect from piracy
           </h4>
-          <p class="text-sm font-semibold text-gray-500">
+          <p
+            class="solutions__cart-subtitletext-sm font-semibold text-gray-500"
+          >
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy.
           </p>
         </div>
-        <div>
-          <img class="h-16 w-16 object-cover" src="./img/1.png" alt="" />
-          <h4 class="text-lg my-4 font-bold">
+        <div class="solutions__card">
+          <img class="solutions__card-image" src="./img/1.png" alt="" />
+          <h4 class="solutions__card-title">
             High security to protect from piracy
           </h4>
-          <p class="text-sm font-semibold text-gray-500">
+          <p
+            class="solutions__cart-subtitletext-sm font-semibold text-gray-500"
+          >
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy.
           </p>
         </div>
-        <div>
-          <img class="h-16 w-16 object-cover" src="./img/1.png" alt="" />
-          <h4 class="text-lg my-4 font-bold">
+        <div class="solutions__card">
+          <img class="solutions__card-image" src="./img/1.png" alt="" />
+          <h4 class="solutions__card-title">
             High security to protect from piracy
           </h4>
-          <p class="text-sm font-semibold text-gray-500">
+          <p
+            class="solutions__cart-subtitletext-sm font-semibold text-gray-500"
+          >
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy.
           </p>
@@ -120,7 +124,7 @@
       </div>
     </div>
     <div class="section">
-      <div class="grid max-w-6xl px-3 mx-auto grid-cols-2 gap-5">
+      <div class="work-with-us">
         <div>
           <span class="section__tagline"> Why should you work with us? </span>
           <h4 class="section__title">
@@ -132,27 +136,19 @@
             erat, sed diam voluptua invidunt ut labore.
           </p>
         </div>
-        <div>
-          <div class="flex my-3 items-center">
+        <div class="work-with-us__list">
+          <div class="work-with-us__list-item">
             <img src="./img/ArrowIcon.svg" />
 
-            <p class="text-sm ml-3 leading-7 text-gray-500">
+            <p class="work-with-us__list-description">
               Lorem ipsum dolor sit amet, consectetur adipiscing <br />
               elit, sed do eiusmod.
             </p>
           </div>
-          <div class="flex my-3 items-center">
+          <div class="work-with-us__list-item">
             <img src="./img/ArrowIcon.svg" />
 
-            <p class="text-sm ml-3 leading-7 text-gray-500">
-              Lorem ipsum dolor sit amet, consectetur adipiscing <br />
-              elit, sed do eiusmod.
-            </p>
-          </div>
-          <div class="flex my-3 items-center">
-            <img src="./img/ArrowIcon.svg" />
-
-            <p class="text-sm ml-3 leading-7 text-gray-500">
+            <p class="work-with-us__list-description">
               Lorem ipsum dolor sit amet, consectetur adipiscing <br />
               elit, sed do eiusmod.
             </p>
@@ -162,75 +158,66 @@
     </div>
 
     <div class="section py-8" style="background: url(./img/Mask.png)">
-      <div class="grid max-w-6xl px-3 gap-8 mx-auto grid-cols-2">
-        <div class="flex items-start justify-center flex-col">
+      <div class="impresions">
+        <div class="impresions__left">
           <h4 class="section__title">More impressions, more conversions</h4>
           <p class="section__subtitle">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
             erat, sed diam voluptua invidunt ut labore.
           </p>
-          <a href="" class="button button--primary">Get Free trial</a>
+          <a class="button button--primary">Get Free trial</a>
         </div>
-        <div class="flex items-center justify-center">
-          <img class="w-[476px] h-[335px]" src="./img/cards.png" alt="" />
+        <div class="impresions__right">
+          <img class="impression__right-image" src="./img/cards.png" alt="" />
         </div>
       </div>
     </div>
 
-    <section class="grid grid-cols-5 gap-4 max-w-6xl px-3 mx-auto">
-      <img src="./img/logo1.PNG" class="w-[170px]" />
-      <img src="./img/logo2.PNG" class="w-[170px]" />
-      <img src="./img/logo3.PNG" class="w-[170px]" />
-      <img src="./img/logo4.PNG" class="w-[170px]" />
-      <img src="./img/logo3.PNG" class="w-[170px]" />
+    <section class="pattners">
+      <img src="./img/logo1.PNG" class="pattners__image" />
+      <img src="./img/logo2.PNG" class="pattners__image" />
+      <img src="./img/logo3.PNG" class="pattners__image" />
+      <img src="./img/logo4.PNG" class="pattners__image" />
+      <img src="./img/logo3.PNG" class="pattners__image" />
     </section>
-    <section
-      class="mr-[5%] ml-[5%] mt-[120px] gap-[40px] grid grid-cols-2 mb-[100px]"
-    >
-      <div class="m-auto">
-        <p
-          class="text-base font-semibold bg-clip-text text-transparent bg-gradient-to-r from-[#373FFF] to-[#3ACAF8] mb-[20px]"
-        >
-          Discover More
-        </p>
-        <p class="text-3xl font-bold leading-10 mb-[20px] text-[#1D2130]">
+    <section class="discover">
+      <div class="discover__left">
+        <p class="discover__left-title">Discover More</p>
+        <p class="discover__left-title">
           Analyze your sales and marketing leads
         </p>
-        <p class="text-sm leading-7 text-gray-500">
+        <p class="discover__left-description">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
           sed diam voluptua invidunt ut labore.
         </p>
       </div>
-      <div class="m-auto">
-        <div class="flex gap-6 my-5">
-          <span
-            class="h-11 w-11 mt-auto mb-auto flex items-center justify-center rounded-[50%] bg-[#F4F5F7]"
-            ><img class="h-4 w-4" src="./img/icons.png"
+      <div class="discover__right">
+        <div class="discover__right-item">
+          <span class="discover__right-image"
+            ><img class="discover__right-icon" src="./img/icons.png"
           /></span>
-          <p class="text-sm text-gray-500 leading-7">
+          <p class="discover__right-description">
             Lorem ipsum dolor sit amet, consectetur adipiscing<br />
             elit, sed do eiusmod.
           </p>
         </div>
-        <div class="flex gap-6 my-5">
-          <span
-            class="h-11 w-11 mt-auto mb-auto flex items-center justify-center rounded-[50%] bg-[#F4F5F7]"
-            ><img class="h-4 w-4" src="./img/icons.png"
+        <div class="discover__right-item">
+          <span class="discover__right-image"
+            ><img class="discover__right-icon" src="./img/icons.png"
           /></span>
-          <p class="text-sm text-gray-500 leading-7">
-            Lorem ipsum dolor sit amet, consectetur adipiscing <br />
+          <p class="discover__right-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing<br />
             elit, sed do eiusmod.
           </p>
         </div>
-        <div class="flex gap-6 my-5">
-          <span
-            class="h-11 w-11 mt-auto mb-auto flex items-center justify-center rounded-[50%] bg-[#F4F5F7]"
-            ><img class="h-4 w-4" src="./img/icons.png"
+        <div class="discover__right-item">
+          <span class="discover__right-image"
+            ><img class="discover__right-icon" src="./img/icons.png"
           /></span>
-          <p class="text-sm text-gray-500 leading-7">
-            Lorem ipsum dolor sit amet, consectetur adipiscing <br />
+          <p class="discover__right-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing<br />
             elit, sed do eiusmod.
           </p>
         </div>
@@ -241,35 +228,33 @@
       <div class="section__header">
         <h4 class="section__title">Features</h4>
       </div>
-      <div
-        class="grid bg-[#D798E126] max-w-6xl mx-auto grid-cols-3 m-auto w-fit p-10 gap-10 rounded-lg"
-      >
-        <div class="p-5">
-          <img src="./img/3.png" class="h-16 w-16" />
-          <p class="text-lg font-bold leading-7">
+      <div class="features">
+        <div class="features__item">
+          <img src="./img/3.png" class="features__item-img" />
+          <p class="feature__item-title">
             High security to protect from piracy
           </p>
-          <p class="text-sm text-gray-500 my-2">
+          <p class="feature__item-description">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy.
           </p>
         </div>
-        <div class="border-l-[2px] p-5 border-gray-200">
-          <img src="./img/3.png" class="h-16 w-16" />
-          <p class="text-lg font-bold leading-7">
+        <div class="features__item">
+          <img src="./img/3.png" class="features__item-img" />
+          <p class="feature__item-title">
             High security to protect from piracy
           </p>
-          <p class="text-sm text-gray-500 my-2">
+          <p class="feature__item-description">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy.
           </p>
         </div>
-        <div class="border-l-[2px] p-5 border-gray-200">
-          <img src="./img/3.png" class="h-16 w-16" />
-          <p class="text-lg font-bold leading-7 my-2">
+        <div class="features__item">
+          <img src="./img/3.png" class="features__item-img" />
+          <p class="feature__item-title">
             High security to protect from piracy
           </p>
-          <p class="text-sm text-gray-500 my-2">
+          <p class="feature__item-description">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy.
           </p>
@@ -277,115 +262,67 @@
       </div>
     </div>
 
-    <div class="section flex flex-col items-center justify-center">
-      <h4 class="text-3xl font-bold leading-10 my-2 text-primary text-center">
+    <div class="are-you-ready">
+      <h4 class="are-you-ready__title">
         Are you ready to grow your <br />
         business with us?
       </h4>
-      <p class="text-sm text-gray-500 text-center leading-7 my-4">
+      <p class="are-you-ready__description">
         Lorem ipsum dolor sit amet, consetetur sadipscing <br />
         elitr, sed diam nonumy.
       </p>
       <button class="button button--primary">Free trial</button>
     </div>
 
-    <footer class="footer mt-[130px] text-center relative">
-      <div
-        class="bg-primary text-white pr-[5%] pl-[5%] mt-[100px] pt-[50px] pb-[100px]"
-      >
-        <div class="flex text-left gap-[100px]">
-          <div>
-            <p class="font-[600] text-[18px] mb-[10px]">Company Info</p>
-            <ul>
-              <li class="font-[400] text-[14px] opacity-[0.6] mb-[12px]">
-                About Us
-              </li>
-              <li class="font-[400] text-[14px] opacity-[0.6] mb-[12px]">
-                Carrier
-              </li>
-              <li class="font-[400] text-[14px] opacity-[0.6] mb-[12px]">
-                We are hiring
-              </li>
-              <li class="font-[400] text-[14px] opacity-[0.6] mb-[12px]">
-                Blog
-              </li>
-            </ul>
-          </div>
-          <div>
-            <p class="font-[600] text-[18px] mb-[10px]">Company Info</p>
-            <ul>
-              <li class="font-[400] text-[14px] opacity-[0.6] mb-[12px]">
-                About Us
-              </li>
-              <li class="font-[400] text-[14px] opacity-[0.6] mb-[12px]">
-                Carrier
-              </li>
-              <li class="font-[400] text-[14px] opacity-[0.6] mb-[12px]">
-                We are hiring
-              </li>
-              <li class="font-[400] text-[14px] opacity-[0.6] mb-[12px]">
-                Blog
-              </li>
-            </ul>
-          </div>
-          <div>
-            <p class="font-[600] text-[18px] mb-[10px]">Company Info</p>
-            <ul>
-              <li class="font-[400] text-[14px] opacity-[0.6] mb-[12px]">
-                About Us
-              </li>
-              <li class="font-[400] text-[14px] opacity-[0.6] mb-[12px]">
-                Carrier
-              </li>
-              <li class="font-[400] text-[14px] opacity-[0.6] mb-[12px]">
-                We are hiring
-              </li>
-              <li class="font-[400] text-[14px] opacity-[0.6] mb-[12px]">
-                Blog
-              </li>
-            </ul>
-          </div>
-          <div>
-            <p class="font-[600] text-[18px] mb-[10px]">Company Info</p>
-            <ul>
-              <li class="font-[400] text-[14px] opacity-[0.6] mb-[12px]">
-                About Us
-              </li>
-              <li class="font-[400] text-[14px] opacity-[0.6] mb-[12px]">
-                Carrier
-              </li>
-              <li class="font-[400] text-[14px] opacity-[0.6] mb-[12px]">
-                We are hiring
-              </li>
-              <li class="font-[400] text-[14px] opacity-[0.6] mb-[12px]">
-                Blog
-              </li>
-            </ul>
-          </div>
-          <div>
-            <img src="./img/Vectorwhite.png" class="mb-[20px]" />
-            <p class="font-[600] text-[18px] mb-[20px]">
-              Subscribe to our Newsletter
-            </p>
-            <div class="bg-[#2B2E3C] w-[100%] m-auto flex rounded-[12px]">
-              <input
-                class="text-black outline-none bg-transparent p-[12px] placeholder:text-[white] placeholder:opacity-[0.5] text-[16px] pl-[12px]"
-                type="text"
-                placeholder="Your Email"
-              />
-              <button
-                class="p-[16px] pl-[40px] pr-[40px] rounded-[12px] font-semibold text-[black] bg-white"
-              >
-                Subscribe
-              </button>
-            </div>
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="">
+          <h4 class="footer__title">Company Info</h4>
+          <ul class="footer__list">
+            <li class="">About Us</li>
+            <li class="">Carrier</li>
+            <li class="">We are hiring</li>
+            <li class="">Blog</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__title">Company Info</h4>
+          <ul class="footer__list">
+            <li class="">About Us</li>
+            <li class="">Carrier</li>
+            <li class="">We are hiring</li>
+            <li class="">Blog</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__title">Company Info</h4>
+          <ul class="footer__list">
+            <li class="">About Us</li>
+            <li class="">Carrier</li>
+            <li class="">We are hiring</li>
+            <li class="">Blog</li>
+          </ul>
+        </div>
+
+        <div>
+          <img src="./img/Vectorwhite.png" class="mb-[20px]" />
+          <p class="font-[600] text-[18px] mb-[20px]">
+            Subscribe to our Newsletter
+          </p>
+          <div class="subscribe-form">
+            <input
+              class="subscribe-form__input"
+              type="text"
+              placeholder="Your Email"
+            />
+            <a class="button button--light"> Subscribe </a>
           </div>
         </div>
-        <div class="flex mt-[50px] opacity-[0.5]">
-          <hr class="w-[40%] m-auto" />
-          <p>© Copyright Finsweet 2022</p>
-          <hr class="w-[40%] m-auto" />
-        </div>
+      </div>
+      <div class="footer__copywrite">
+        <div class="footer__copywrite-line"></div>
+        <p>© Copyright Finsweet 2022</p>
+        <div class="footer__copywrite-line"></div>
       </div>
     </footer>
   </body>
