@@ -34,18 +34,19 @@
 .hero__input {
   @apply flex-1 px-3 outline-none;
 }
-.work-with-us {
-  @apply grid max-w-6xl px-3 mx-auto grid-cols-2 gap-5;
-}
+
 .hero {
-  @apply p-12 justify-center items-center flex-col flex;
+  @apply relative p-12 justify-center items-center flex-col flex;
   background-image: url("../src/img/blur.png");
 }
 .work-with-us__list-description {
   @apply text-sm ml-3 leading-7;
 }
-.impresions {
+.impresions__body {
   @apply grid max-w-6xl px-3 gap-8 mx-auto grid-cols-2;
+}
+.impresions {
+  @apply section py-8;
 }
 .impresions__left {
   @apply flex items-start justify-center flex-col;
@@ -77,12 +78,10 @@
 .solutions__card-title {
   @apply text-lg my-4 font-bold;
 }
-.solutions__cart-subtitletext-sm {
+.solutions__cart-subtitle {
   @apply font-semibold text-gray-500;
 }
-.solutions {
-  @apply grid rounded-md max-w-6xl mx-auto grid-cols-3 gap-4 p-8 bg-light-violet;
-}
+
 .hero__title {
   @apply font-bold text-4xl leading-10;
 }
@@ -123,7 +122,12 @@
   @apply text-sm my-3;
 }
 .subscribe-form {
+}
+.subscribe-form__group {
   @apply flex rounded-md py-[5px] items-center px-4 bg-[#2B2E3C];
+}
+.subscribe-form__title {
+  @apply text-base mb-4;
 }
 .subscribe-form__input {
   @apply text-black  outline-none bg-transparent placeholder:text-[white] placeholder:opacity-[0.5] text-[16px] pl-[12px];
@@ -160,7 +164,7 @@
   @apply text-sm ml-3 text-gray-500 leading-7;
 }
 
-.features {
+.features__body {
   @apply grid bg-[#D798E126] max-w-6xl mx-auto grid-cols-3 m-auto w-fit p-10 gap-10 rounded-lg;
 }
 .features__item {
@@ -251,4 +255,37 @@
 }
 .about__description {
   @apply text-sm  opacity-80 text-gray-500 my-2;
+}
+.solutions,
+.work-with-us,
+.features {
+  @apply section;
+}
+.solutions__header,
+.features__header {
+  @apply section__header;
+}
+
+.solutions__tagline,
+.work-with-us__tagline,
+.discover__left-tagline {
+  @apply section__tagline;
+}
+.solutions__title,
+.features__title,
+.work-with-us__title,
+.impresions__title,
+.discover__left-title {
+  @apply section__title;
+}
+.work-with-us__subtitle,
+.impresions__subtitle {
+  @apply text-sm my-4 leading-7 text-gray-500;
+}
+.solutions_body {
+  @apply grid rounded-md max-w-6xl mx-auto grid-cols-3 gap-4 p-8 bg-light-violet;
+}
+
+.work-with-us__body {
+  @apply grid max-w-6xl px-3 mx-auto grid-cols-2 gap-5;
 }
