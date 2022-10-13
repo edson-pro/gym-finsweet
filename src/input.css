@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav {
+  @apply flex items-center justify-between py-3 max-w-6xl mx-auto px-4;
+}
+.nav__logo {
+  /* @apply; */
+}
+.nav__menu {
+  @apply flex items-center justify-between;
+}
+.nav__link {
+  @apply px-3 text-sm text-primary;
+}
+.button {
+  @apply text-sm font-bold py-2 px-4 rounded;
+}
+.button--primary {
+  @apply bg-primary hover:bg-primary text-white;
+}
+.button--light {
+  @apply bg-white hover:bg-white text-primary;
+}
+.hero__inner {
+  @apply max-w-5xl mx-auto text-center;
+}
+.hero__header {
+  @apply mx-auto max-w-2xl my-6;
+}
+.hero__input {
+  @apply flex-1 px-3 outline-none;
+}
+
+.hero {
+  @apply relative p-12 justify-center items-center flex-col flex;
+  background-image: url("../src/img/blur.png");
+}
+.work-with-us__list-description {
+  @apply text-sm ml-3 leading-7;
+}
+.impresions__body {
+  @apply grid max-w-6xl px-3 gap-8 mx-auto grid-cols-2;
+}
+.impresions {
+  @apply section py-8;
+  background: url(./img/Mask.png);
+}
+.impresions__left {
+  @apply flex items-start justify-center flex-col;
+}
+.impresions__right-image {
+  @apply w-[476px] h-[335px];
+}
+.pattners {
+  @apply grid grid-cols-5 gap-4 max-w-6xl px-3 mx-auto;
+}
+.pattners__image {
+  @apply w-[140px];
+}
+.discover {
+  @apply max-w-6xl mx-auto mt-32 gap-10 grid grid-cols-2 mb-24;
+}
+.impresions__right {
+  @apply flex items-center justify-center;
+}
+.work-with-us__list {
+  @apply flex flex-col items-center;
+}
+.work-with-us__list-item {
+  @apply my-3 flex items-center;
+}
+.solutions__card-image {
+  @apply h-16 w-16 object-cover;
+}
+.solutions__card-title {
+  @apply text-lg my-4 font-bold;
+}
+.solutions__cart-subtitle {
+  @apply font-semibold text-gray-500;
+}
+
+.hero__title {
+  @apply font-bold text-4xl leading-10;
+}
+.hero__subtitle {
+  @apply text-sm leading-7 text-gray-500 my-4;
+}
+.hero__form {
+  @apply flex items-center border border-gray-200 bg-white rounded-md max-w-lg mx-auto p-2;
+}
+.hero__img {
+  @apply max-w-4xl my-9 mx-auto px-3;
+}
+.bg-light-violet {
+  @apply bg-[#E0E4FC];
+}
+.section {
+  @apply my-11;
+}
+.section__header {
+  @apply flex flex-col max-w-xl mx-auto text-center justify-center my-7 items-center;
+}
+.section__subtitle {
+  @apply text-sm leading-7 text-gray-500 my-4;
+}
+.section__title {
+  @apply text-3xl font-bold leading-10 my-4;
+}
+.section__tagline {
+  @apply font-extrabold text-transparent text-base bg-clip-text bg-gradient-to-r from-[#373FFF] to-[#3ACAF8];
+}
+.footer {
+  @apply bg-primary text-white px-4 mt-20 py-20;
+}
+.footer__inner {
+  @apply grid grid-cols-4 max-w-6xl mx-auto gap-6;
+}
+.footer__list li {
+  @apply text-sm my-3;
+}
+.subscribe-form {
+}
+.subscribe-form__group {
+  @apply flex rounded-md py-1 items-center px-4 bg-primary;
+}
+.subscribe-form__title {
+  @apply text-base mb-4;
+}
+.subscribe-form__input {
+  @apply text-black  outline-none bg-transparent placeholder:text-white placeholder:opacity-50 text-base pl-3;
+}
+.footer__copywrite {
+  @apply flex mt-10 text-gray-500;
+}
+.discover__left {
+  @apply m-auto;
+}
+
+.discover__left-tagline {
+  @apply text-base font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-300 mb-5;
+}
+.discover__left-title {
+  @apply text-3xl font-bold leading-10 mb-5 text-primary;
+}
+.discover__left-description {
+  @apply text-sm leading-7 text-gray-500;
+}
+.discover__right {
+  @apply m-auto;
+}
+.rounded-half {
+  @apply rounded-full;
+}
+.discover__right-image {
+  @apply h-11 w-11 mt-auto mb-auto flex items-center justify-center rounded-half bg-gray-50;
+}
+.discover__right-icon {
+  @apply h-4 w-4;
+}
+.discover__right-item {
+  @apply flex items-center my-3;
+}
+.discover__right-description {
+  @apply text-sm ml-3 text-gray-500 leading-7;
+}
+
+.features__body {
+  @apply grid bg-[#D798E126] max-w-6xl mx-auto grid-cols-3 m-auto w-fit p-10 gap-10 rounded-lg;
+}
+.features__item {
+  @apply p-5 border-r-2 last:border-none border-r-gray-200;
+}
+
+.features__item-img {
+  @apply h-16 w-16;
+}
+
+.feature__item-title {
+  @apply text-lg font-bold my-4 leading-7;
+}
+.feature__item-description {
+  @apply text-sm text-gray-500 my-2;
+}
+.are-you-ready {
+  @apply flex flex-col items-center justify-center;
+}
+.are-you-ready__title {
+  @apply text-3xl font-bold leading-10 my-2 text-primary text-center;
+}
+.are-you-ready__description {
+  @apply text-sm text-gray-500 text-center leading-7 my-4;
+}
+.footer__copywrite {
+  @apply flex items-center gap-6;
+}
+.footer__copywrite-line {
+  @apply h-[1px] bg-slate-600 w-full flex-1;
+}
+.hero-product {
+  @apply grid grid-cols-2 gap-7 py-16 max-w-6xl mx-auto;
+}
+
+.hero-product__left {
+  @apply flex flex-col items-start justify-center;
+}
+.hero-product__title {
+  @apply text-2xl font-bold leading-10;
+}
+.hero-product__text {
+  @apply text-sm leading-7 text-gray-500 my-4;
+}
+.product__right {
+}
+.hero-product__buttons {
+}
+
+.service {
+  @apply pt-12 my-8;
+  background-image: url(./img/Blur2.png);
+}
+
+.service__title {
+  @apply text-2xl text-center font-bold leading-10;
+}
+
+.service__title {
+  @apply text-2xl font-semibold leading-normal mb-5 text-center;
+}
+.service__body {
+  @apply bg-[#FFFFFFB0] max-w-6xl grid grid-cols-3 w-fit p-10 gap-10 mt-12 rounded-none rounded-tr-md;
+}
+.service__item-icon {
+  @apply w-8 h-8 mb-5;
+}
+.service__item-title {
+  @apply font-bold text-base leading-relaxed my-2;
+}
+.service__item-text {
+  @apply text-sm  opacity-80 text-gray-500 my-2;
+}
+
+.about {
+  @apply grid my-8 grid-cols-2 max-w-6xl mx-auto;
+}
+.about__right {
+  @apply justify-center items-center flex;
+}
+.about__left {
+  @apply flex flex-col items-start justify-center;
+}
+.about__title {
+  @apply font-bold text-2xl leading-relaxed my-2;
+}
+.about__tagline {
+  @apply font-extrabold text-transparent text-base bg-clip-text bg-gradient-to-r from-[#373FFF] to-[#3ACAF8];
+}
+.about__description {
+  @apply text-sm  opacity-80 text-gray-500 my-2;
+}
+.solutions,
+.work-with-us,
+.features {
+  @apply section;
+}
+.solutions__header,
+.features__header {
+  @apply section__header;
+}
+
+.solutions__tagline,
+.work-with-us__tagline,
+.discover__left-tagline {
+  @apply section__tagline;
+}
+.solutions__title,
+.features__title,
+.work-with-us__title,
+.impresions__title,
+.discover__left-title {
+  @apply section__title;
+}
+.work-with-us__subtitle,
+.impresions__subtitle {
+  @apply text-sm my-4 leading-7 text-gray-500;
+}
+.solutions__body {
+  @apply grid rounded-md max-w-6xl mx-auto grid-cols-3 gap-4 p-8 bg-light-violet;
+}
+
+.work-with-us__body {
+  @apply grid max-w-6xl px-3 mx-auto grid-cols-2 gap-5;
+}
+
+.subscribe__button,
+.nav_button,
+.are-you-ready__button,
+.subscribe__button {
+  @apply button;
+}
+
+.subscribe__button--light,
+.nav_button--light .are-you-ready__button--light,
+.subscribe__button--light {
+  @apply button--light;
+}
+
+.subscribe__button--primary,
+.nav_button--primary .are-you-ready__button--primary,
+.subscribe__button--primary {
+  @apply button--primary;
+}
