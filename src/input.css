@@ -47,6 +47,7 @@
 }
 .impresions {
   @apply section py-8;
+  background: url(./img/Mask.png);
 }
 .impresions__left {
   @apply flex items-start justify-center flex-col;
@@ -219,6 +220,7 @@
 
 .service {
   @apply pt-12 my-8;
+  background-image: url(./img/Blur2.png);
 }
 
 .service__title {
@@ -291,4 +293,23 @@
 
 .work-with-us__body {
   @apply grid max-w-6xl px-3 mx-auto grid-cols-2 gap-5;
+}
+
+.subscribe__button,
+.nav_button,
+.are-you-ready__button,
+.subscribe__button {
+  @apply button;
+}
+
+.subscribe__button--light,
+.nav_button--light .are-you-ready__button--light,
+.subscribe__button--light {
+  @apply button--light;
+}
+
+.subscribe__button--primary,
+.nav_button--primary .are-you-ready__button--primary,
+.subscribe__button--primary {
+  @apply button--primary;
 }
